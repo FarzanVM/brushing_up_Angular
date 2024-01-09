@@ -1,0 +1,14 @@
+<h2>This component shows the functionalties related to templates like binding etc</h2>
+<h3>Interpolation,use curly braces </h3>
+<h3>My Name is {{name}}</h3>
+<h3>Property Binding ,use square brackets []</h3>
+<button [disabled]="isDisabled"> Disabled Button using property binding</button>
+<h3>Template Statements(method/properties) that responnd to user events,use brackets ()</h3>
+<button (click)="onClick()">Click Me</button>
+<h3>Reference variable</h3>
+<input #fname placeholder="Enter Name">
+<button (click)="showName(fname.value)">Show Name</button>
+<h3>Attribute Binding,sometimes you dont have an element property to bind so use attribute binding</h3>
+<button [attr.aria-label]="closeLabel">Close me</button>
+<h3>parent-child interaction</h3>
+<app-child [data]="'Farzan'" (outputEvent)="fromChild($event)"></app-child>

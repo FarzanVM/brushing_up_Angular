@@ -1,0 +1,28 @@
+<h2>Directives</h2>
+<h3>Structural Directives</h3>
+<h4>ngFor</h4>
+<div *ngFor="let name of items">
+    {{name}}
+</div>
+<h4>ngIf</h4>
+<div *ngIf="show">
+    Show Names
+</div>
+<h4>ngSwitch</h4>
+<div [ngSwitch]="day">
+    <div *ngSwitchCase="0">Sunday</div>
+    <div *ngSwitchCase="1">Monday</div>
+    <div *ngSwitchCase="2">Tuesday</div>
+    <div *ngSwitchCase="3">Wednesday</div>
+    <div *ngSwitchCase="4">Thursday</div>
+    <div *ngSwitchCase="5">Friday</div>
+    <div *ngSwitchCase="6">Saturday</div>
+</div>
+<h3>Attribute Directives</h3>
+<h4>ngClass</h4>
+<div [ngClass]="isRed?'showRed':'showBlue'">Changing color based on isRed or isBlue using ng class</div>
+<h4>ngStyle</h4>
+<div [ngStyle]="{'background-color':isRed?'red':'yellow'}">Changing background color using ngstyle</div>
+<div [style.background-color]="isRed?'green':'yellowgreen'">Changing background color using ngstyle</div>
+<h4>ngModel</h4>
+<input [(ngModel)]="name">
