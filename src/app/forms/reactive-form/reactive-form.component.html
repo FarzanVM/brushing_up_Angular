@@ -1,0 +1,10 @@
+<h2>Reactive Forms</h2>
+<!-- a single control -->
+<!-- <input type="text" [formControl]="name" placeholder=" First name"> -->
+<!-- a group of controls -->
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <input type="text" formControlName="firstname" placeholder="First name"><br>
+    <input type="text" formControlName="lastname" placeholder="Last name"><br>
+    <input type="email" formControlName="email" placeholder="Email"><br>
+    <button type="submit" >Submit</button>
+</form>

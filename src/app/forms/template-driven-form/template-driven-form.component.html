@@ -1,0 +1,13 @@
+<h2>Template Driven Form</h2>
+<form #f="ngForm" (ngSubmit)="onSubmit()">
+    <div ngModelGroup="name">
+        <input type="text" name="firstname" [(ngModel)]="model.firstname" placeholder="Firstname" required><br>
+        <input type="text" name="lastname" [(ngModel)]="model.lastname" placeholder="Lastname" required><br>
+    </div>
+    
+    <input type="text" name="email" [(ngModel)]="model.email" #email="ngModel"  placeholder="Email"><br>
+    <button (click)="showFormValues(f.value)">Show</button>
+    <button [disabled]="f.invalid">Submit</button>
+    <p>{{f.value | json}}</p>
+    <p>{{email?.touched | json}}</p>
+</form >
