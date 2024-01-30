@@ -12,6 +12,8 @@ import { TasksComponent } from './change_detection/tasks/tasks.component';
 import { TodolistComponent } from './change_detection/tasks/todolist/todolist.component';
 import { TemplateDrivenFormComponent } from './forms/template-driven-form/template-driven-form.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
+import { RouterComponent } from './routing/router/router.component';
+import { HelloworldComponent } from './life_cycle_hooks/helloworld/helloworld.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.compo
     TodolistComponent,
     TemplateDrivenFormComponent,
     ReactiveFormComponent,
+    RouterComponent,
+    HelloworldComponent,
   ],
   imports: [
     BrowserModule,
