@@ -3,3 +3,8 @@
 <p>This is coming from ngOninit when component is initilaized</p>
 <button (click)="changeName()">Change Name</button>
 <p>{{name}}</p>
+<button (click)="showChild()">Show Child</button>
+<input type="text" [(ngModel)]="name">
+<app-newchild *ngIf="isChild" [name]="name">
+<h2 #projectedContent>This is content projection</h2>
+</app-newchild>

@@ -14,6 +14,7 @@ import { TemplateDrivenFormComponent } from './forms/template-driven-form/templa
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 import { RouterComponent } from './routing/router/router.component';
 import { HelloworldComponent } from './life_cycle_hooks/helloworld/helloworld.component';
+import { NewchildComponent } from './life_cycle_hooks/newchild/newchild.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HelloworldComponent } from './life_cycle_hooks/helloworld/helloworld.co
     ReactiveFormComponent,
     RouterComponent,
     HelloworldComponent,
+    NewchildComponent,
   ],
   imports: [
     BrowserModule,
