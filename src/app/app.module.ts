@@ -15,6 +15,7 @@ import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.compo
 import { RouterComponent } from './routing/router/router.component';
 import { HelloworldComponent } from './life_cycle_hooks/helloworld/helloworld.component';
 import { NewchildComponent } from './life_cycle_hooks/newchild/newchild.component';
+import { RxjsComponent } from './rxjs/rxjs/rxjs.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { NewchildComponent } from './life_cycle_hooks/newchild/newchild.componen
     RouterComponent,
     HelloworldComponent,
     NewchildComponent,
+    RxjsComponent,
   ],
   imports: [
     BrowserModule,
